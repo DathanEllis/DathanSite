@@ -1,0 +1,194 @@
+
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+
+.sectioncol {
+	/*clear: both;*/
+	/*padding: 0px;*/
+	margin: 0px;
+    height: 84vh;   
+    /*padding-top: 8vh;*/
+    /*padding-bottom: 8vh;*/
+    /*display: block;*/
+    /*width: 78vw;*/
+    /*padding-right: 11vw;*/
+    /*padding-left: 11vw;*/
+    /*display: table-row;*/
+    
+    /*position: relative;*/
+    overflow: hidden;
+}
+
+.sectioncol:first-child
+{
+    padding-top: 8vh;
+}
+.sectioncol:last-child
+{
+    padding-bottom: 8vh;
+}
+.sectioncol:nth-child(odd)
+{
+    background-color: rgba(104, 107, 121, .1);
+}
+/* ==========================================================================
+   Grouping
+   ========================================================================== */
+
+
+/*.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}*/
+.group {
+    /*zoom:1;  For IE 6/7 (trigger hasLayout) */
+}
+
+/* ==========================================================================
+   Column Setup
+   ========================================================================== */
+
+.col {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	/*height: 84vh;*/
+	/*float:left;*/
+	/* margin: 2% 0 2% 3%; */
+	/*margin-left: 3%;*/	
+	
+	/* Address 'blurryness from being on a 'half pixle' 
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;*/
+}
+
+/*
+.section > h1,
+.section > h2,
+.section > h3,
+.section > p
+{
+    display: table-caption;
+    background: inherit;
+}
+.section > h1,
+.section > h2,
+.section > h3
+{
+    margin: 0px;
+    -webkit-padding-after: 0.83em;
+    -webkit-padding-before: 0.83em;
+    color: #686b79;
+}*/
+
+.col p,
+.col li
+{
+    /*font-size: 1.2em;*/
+}
+
+.col ul
+{
+    padding: 0px;
+}
+.col::-webkit-scrollbar
+{ 
+    display: none;
+}
+
+/* ==========================================================================
+   Center immediate child elements
+   ========================================================================== */
+
+.col > *
+{
+    /*position: relative;
+    top: 47%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);*/
+   
+}
+
+
+.col::-webkit-scrollbar
+{ 
+    display: none;
+}
+
+.col > img
+{
+    top: 50%;    
+}
+
+/* ==========================================================================
+   Use .max to maximize an img in a column
+   ========================================================================== */
+
+.max
+{
+    width: 100%;
+}
+
+/* ==========================================================================
+   Ensure all child elements are smaller then col
+   ========================================================================== */
+
+.col *
+{
+    max-width: 100% !important;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+/* ==========================================================================
+   Remove Margins And Go Full Width When 480 Pixels
+   ========================================================================== */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		/* margin: 1% 0 1% 0%; */
+		height: auto;
+		padding-top:0;
+		padding-bottom:0;
+	}
+	
+	.sectioncol
+	{
+	    display: block;
+	    width:90%;
+	    padding-left: 5%;
+	    padding-right: 5%;
+	    padding-top: 0px;
+	    padding-bottom: 0px;
+	    height: inherit;
+	    text-align: center;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	.col { 
+		/* margin: 1% 0 1% 0%; */
+		/* height: 100vh;*/
+		padding-top:0;
+		padding-bottom:0;
+	}
+	
+	.sectioncol
+	{
+	    display: table;
+	    width:90%;
+	    padding-left: 5%;
+	    padding-right: 5%;
+	    /*padding-top: 8%;*/
+	    /*padding-bottom: 8%;*/
+	    height: 84vh;
+	    text-align: center;
+	}
+}

@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Two Columns
+   ========================================================================== */
+
+
+.span_2_of_2 {
+    width: 100%;
+	/*text-align: center;*/
+    /*padding: 10% 0;*/
+	/*background: rgba(47, 99, 106, .7);*/
+    /*----------------------------
+	position: relative;*/
+    /*top: 47%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+ }
+
+.span_1_of_2 {
+	width: 48.5%;
+	/*text-align: center;*/
+    /*padding: 10% 0;*/
+	/*background: rgba(47, 99, 106, .7);*/
+    /*----------------------------*/
+    /*position: relative;*/
+    /*top: 47%;*/
+    /*left: 24.25%;*/
+    /*transform: translate(-50%, -50%);*/
+}
+
+.span_1_of_2 img
+{
+	/*width: 100%;*/
+	/*z-index: -1;*/
+    /*position: relative;*/
+}
+
+.span_2_of_2 img
+{
+	/*width: 100%;*/
+	/*z-index: -1;*/
+    /*position: relative;*/
+}
+
+/* ==========================================================================
+    Below used for graphs that take up the whole page
+   ========================================================================== */
+
+.span_2_of_2 > .graph
+{
+    top: 50%;
+}
+
+/* ==========================================================================
+   Go Full Width When Less Than 480 Pixels
+   ========================================================================== */
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2 {
+		width: 100%; 
+		display: block;
+	}
+	.span_1_of_2 {
+		width: 100%; 
+		display: block;
+	}
+}

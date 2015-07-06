@@ -1,0 +1,169 @@
+
+*  
+    { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+}
+/****************/
+
+.clear 
+    { 
+    clear: both; 
+} 
+
+.right 
+    { 
+    float: right; 
+} 
+
+.left 
+    { 
+    float: left; 
+}
+/****************/
+
+body 
+    { 
+   	/*font-family: "Exo 2", sans-serif;*/
+    /*font: 62.5%/1.5  "Exo 2", "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif; */
+    font: 125%/1.5em  "Exo 2", "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
+    /*background: url(/images/wallpaper.png) repeat; */
+    color: #aaaaaa;   
+    /*text-align: center; */
+    /*background: #2a2a2a;*/
+} 
+
+#wrapper 
+    {  
+    width: 980px;  
+    text-align: left;   
+    margin-left: auto;  
+    margin-right: auto;  
+    background-color: #FFFFFF; 
+}
+/****************/
+
+
+h1 
+    { 
+    font-size: 2.2em;
+    text-shadow: 2px 2px 0 #222222;
+    text-align: center;
+} 
+
+h2 
+    { 
+    font-size: 2.0em;     
+} 
+
+h3 
+    { 
+    font-size: 1.8em;
+    text-shadow: 2px 2px 0 #222222;
+    text-align: center;
+}
+
+h4 
+    { 
+    font-size: 1.6em;     
+} 
+
+h5 
+    { 
+    font-size: 1.4em;     
+} 
+
+p 
+    { 
+    /*font-size: 1.2em;     */
+    font-size: 0.9em;
+    padding: 3% 0;
+}
+
+.p2
+    { 
+    /*font-size: 1.2em;     */
+    font-size: 0.7em;
+    padding: 3% 0;
+}
+/****************/
+
+#section0 h1 {
+	font-size: 2.5em;
+	position: absolute;
+	top: 47%;
+	width: 100%;
+	-webkit-animation: text_drop 3.5s forwards ; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation: text_drop 3.5s forwards;
+    animation-delay: 1s;
+	animation-iteration-count: 1;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes text_drop {
+    from {top: 47%;}
+    to {top: 54%;}
+}
+
+@keyframes text_drop {
+    from {top: 47%;}
+    to {top: 54%;}
+}
+/****************/
+
+input.text 
+  { 
+  padding: 3px; 
+  border: 1px solid #999999;     
+}
+
+table 
+  {  
+  border-spacing: 0; 
+  border-collapse: collapse; 
+} 
+
+td  
+  { 
+  text-align: left; 
+  font-weight: normal; 
+}
+/****************/
+
+
+#section0 {
+	background-image: url(../images/space-2.jpg);
+	/*padding: 30% 0 0 0;*/
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+.content {
+	padding: 3% 0;
+	/*font: 62.5%/1.5em  "Exo 2", "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;*/
+}
+
+/*header {
+  /*background-image: url("../img/background.jpg");
+
+  min-height: 1113px;
+  text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
+/*html, body, div, pre, p, img, span, ul, li, section, h1, time, hr, hgroup, a, img, aside, nav, form, input, article, h2, h3, h4, label, textarea, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  font-family: Rosario;
+}*/

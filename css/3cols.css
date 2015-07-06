@@ -1,0 +1,78 @@
+/* ==========================================================================
+   Three Columns
+   ========================================================================== */
+
+	
+.span_3_of_3 {
+	width: 100%;
+	/*text-align: center;*/
+    /*padding: 10% 0;*/
+	/*background: rgba(47, 99, 106, .7);*/
+    /*--------------------------
+	/*position: relative;*/
+    /*top: 47%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+}
+
+.span_2_of_3 {
+	width: 65.66%;
+	/*text-align: center;*/
+    /*padding: 10% 0;*/
+	/*background: rgba(47, 99, 106, .7);*/
+    /*--------------------------*/
+    /*position: relative;*/
+    /*top: 47%;*/
+    /*left: 32.83%;*/
+    /*transform: translate(-50%, -50%);*/
+}
+
+.span_1_of_3 {
+	width: 31.33%;
+	/*text-align: center;*/
+    /*padding: 10% 0;*/
+	/*background: rgba(47, 99, 106, .7);*/
+    /*--------------------------
+    position: relative;*/
+    /*top: 47%;*/
+    /*left: 15.665%;*/
+    /*transform: translate(-50%, -50%);*/
+}
+
+.span_1_of_3 img {
+    /*width: 100%;*/
+    /*z-index: -1;*/
+    /*position: relative;*/
+}
+
+.span_2_of_3 img {
+    /*width: 100%;*/
+    /*z-index: -1;*/
+    /*position: relative;*/
+}
+
+.span_3_of_3 img {
+    /*width: 100%;*/
+    /*z-index: -1;*/
+    /*position: relative;*/
+}
+
+
+/* ==========================================================================
+   Go Full Width When Less Than 480 Pixels
+   ========================================================================== */
+
+@media only screen and (max-width: 480px) {
+	.span_3_of_3 {
+		width: 100%; 
+		display: block;
+	}
+	.span_2_of_3 {
+		width: 100%; 
+		display: block;
+	}
+	.span_1_of_3 {
+		width: 100%;
+		display: block;
+	}
+}
