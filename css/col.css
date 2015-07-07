@@ -6,7 +6,7 @@
 .sectioncol {
 	/*clear: both;*/
 	/*padding: 0px;*/
-	margin: 0px;
+    margin: 0px;
     height: 84vh;   
     /*padding-top: 8vh;*/
     /*padding-bottom: 8vh;*/
@@ -26,7 +26,7 @@
 }
 .sectioncol:last-child
 {
-    padding-bottom: 8vh;
+    /*padding-bottom: 8vh;*/
 }
 .sectioncol:nth-child(odd)
 {
@@ -95,7 +95,7 @@
 
 .col ul
 {
-    padding: 0px;
+    /*padding: 0px;*/
 }
 .col::-webkit-scrollbar
 { 

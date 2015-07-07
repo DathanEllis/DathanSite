@@ -81,37 +81,33 @@ p
     padding: 3% 0;
 }
 
+ul {
+    /*list-style-type: none;*/
+    padding: 3% 3% 3% 5%;
+    margin: 0;
+    text-align: center;
+}
+
+ul li {
+    /*background-image: url(sqpurple.gif);*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: 0px center; */
+    padding-left: 0; 
+    text-align: left;
+    /*font-size: 0.7em;*/
+    /*line-height: 1.5em;*/
+}
+
 .p2
     { 
     /*font-size: 1.2em;     */
     font-size: 0.7em;
-    padding: 3% 0;
+    padding: 0.5% 3% 3% 0;
+    text-align: left;
 }
+
 /****************/
 
-#section0 h1 {
-	font-size: 2.5em;
-	position: absolute;
-	top: 47%;
-	width: 100%;
-	-webkit-animation: text_drop 3.5s forwards ; /* Chrome, Safari, Opera */
-    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
-    animation: text_drop 3.5s forwards;
-    animation-delay: 1s;
-	animation-iteration-count: 1;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes text_drop {
-    from {top: 47%;}
-    to {top: 54%;}
-}
-
-@keyframes text_drop {
-    from {top: 47%;}
-    to {top: 54%;}
-}
-/****************/
 
 input.text 
   { 
@@ -136,16 +132,174 @@ td
 #section0 {
 	background-image: url(../images/space-2.jpg);
 	/*padding: 30% 0 0 0;*/
-	background-size: cover;
-	-webkit-background-size: cover;
+	background-size: 100% 100%;
+	/*-webkit-background-size: cover;
 	-moz-background-size: cover;
-	-o-background-size: cover;
+	-o-background-size: cover;*/
+	border-bottom: 5px solid #bfc297;
+	/*min-height: 100%;*/
+	/*height: auto;*/
+	padding: 0 0 6% 0;
 }
 
-.content {
-	padding: 3% 0;
-	/*font: 62.5%/1.5em  "Exo 2", "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;*/
+#section0 h1 {
+	font-size: 3em;
+	position: absolute;
+	top: 39%;
+	width: 100%;
+	-webkit-animation: text_drop 3.5s forwards ; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation: text_drop 3.5s forwards;
+    animation-delay: 1s;
+	animation-iteration-count: 1;
 }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes text_drop {
+    /*from {top: 47%;}
+    to {top: 54%;}*/
+    from {top: 39%;}
+    to {top: 49%;}
+}
+
+@keyframes text_drop {
+    from {top: 39%;}
+    to {top: 49%;}
+}
+
+#section1 {
+	/*background-image: url(../images/martin-luther-king.jpg);
+	background-size: 100% 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;*/
+  background: 
+    linear-gradient(
+      rgba(48,48,48, 0.65), 
+      rgba(48,48,48, 0.65)
+    ),
+    url(../images/martin-luther-king.jpg);
+}
+
+#section2 {
+	/*background-color: gray;*/
+	/*background-color: rgba(0,255,0,0.3);*/
+	background-color: rgba(0,0,139,0.3);
+	/*background-image: linear-gradient(90deg, transparent 99%, rgba(255,255,255,0.5) 50%);*/
+	background-image: linear-gradient(90deg, transparent 99%, rgba(0,70,100,0.3) 50%);
+	background-size: 50px 50px;
+}
+
+#section3 {
+  background: 
+    linear-gradient(
+      rgba(139,69,19, 0.95), 
+      rgba(139,69,19, 0.95)
+    ),
+    url(../images/coffee-shop.jpg);
+    background-position: top center;
+    /*background-size: 200% 200%;*/
+    /*-moz-transition: all 3s ease-in-out;
+	-webkit-transition: all 3s ease-in-out;
+	transition: all 3s ease-in-out;*/
+	/*-webkit-transition-timing-function: background-image cubic-bezier(0.42,0,0.58,1);
+	transition-timing-function: background-image cubic-bezier(0.42,0,0.58,1);*/
+	/*transition: background 3s step-end;*/
+	/*-webkit-transition: opacity .6s ease-in-out;
+	-moz-transition: opacity .6s ease-in-out;
+	-o-transition: opacity .6s ease-in-out;
+	transition: opacity .6s ease-in-out;*/
+
+	/*background-position: top center;
+	background-image:url(../images/coffee-shop.jpg);
+	min-height: 100%;
+	height: auto;
+	padding: 6%;
+	margin: 0 auto;
+	text-align: left;
+	border-bottom: 5px solid #bfc297;
+	-moz-transition: all 3s ease-in-out;
+	-webkit-transition: all 3s ease-in-out;
+	transition: all 3s ease-in-out;*/
+
+	 -ms-animation: animatedBackground 3s linear;
+        -moz-animation: animatedBackground 3s linear;
+        -webkit-animation: animatedBackground 3s linear;
+}
+
+/* Put your css in here */
+@keyframes animatedBackground {
+    from { left: 0; }
+    to { left: -1269px; }
+}
+@-webkit-keyframes animatedBackground {
+    from { left: 0; }
+    to { left: -12px; }
+}
+@-moz-keyframes animatedBackground {
+    from { left: 0; }
+    to { left: -12px; }
+}
+
+
+/****************/
+
+.content {
+	/*padding: 3% 3%;*/
+	/*font: 62.5%/1.5em  "Exo 2", "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;*/
+	line-height: 1.5em;
+	font-size: 0.7em;
+    padding: 0.5% 3% 3% 3%;
+    text-align: left;
+}
+
+.title
+    { 
+    font-size: 0.8em;
+    padding: 0.5% 3% 2% 3%;
+    text-align: left;
+    
+}
+
+.right-border {
+    border-right: 1px solid #aaaaaa;
+}
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h2 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+}
+
+h2 span { 
+   /*color: white; */
+   /*font: bold 24px/45px Helvetica, Sans-Serif; */
+   font: bold 40%/60% Helvetica, Sans-Serif; 
+   /*letter-spacing: -1px;  */
+   background: rgb(0, 0, 0); /* fallback color */
+   /*background: rgba(0, 0, 0, 0.7);*/
+   background: rgba(0, 0, 0, 0.8);
+   padding: 1%; 
+}
+
+.summary 
+    { 
+    color: #dddddds;
+    padding: 0 0 3% 0;
+}
+
+.background-block {
+	font-size: 0.9em;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 1% 1% 1% 1%;
+}
+
 
 /*header {
   /*background-image: url("../img/background.jpg");
