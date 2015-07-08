@@ -136,7 +136,7 @@ td
 	/*-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;*/
-	border-bottom: 5px solid #bfc297;
+	border-bottom: .2em solid #8B1A1A;
 	/*min-height: 100%;*/
 	/*height: auto;*/
 	padding: 0 0 6% 0;
@@ -179,6 +179,7 @@ td
       rgba(48,48,48, 0.65)
     ),
     url(../images/martin-luther-king.jpg);
+    border-bottom: .15em solid rgba(0, 0, 0, 0.9);
 }
 
 #section2 {
@@ -188,6 +189,8 @@ td
 	/*background-image: linear-gradient(90deg, transparent 99%, rgba(255,255,255,0.5) 50%);*/
 	background-image: linear-gradient(90deg, transparent 99%, rgba(0,70,100,0.3) 50%);
 	background-size: 50px 50px;
+	/*border-bottom: .15em solid #528B8B;*/
+	border-bottom: .15em solid rgba(0, 0, 0, 0.7);
 }
 
 #section3 {
@@ -198,17 +201,11 @@ td
     ),
     url(../images/coffee-shop.jpg);
     background-position: top center;
-    /*background-size: 200% 200%;*/
-    /*-moz-transition: all 3s ease-in-out;
-	-webkit-transition: all 3s ease-in-out;
-	transition: all 3s ease-in-out;*/
-	/*-webkit-transition-timing-function: background-image cubic-bezier(0.42,0,0.58,1);
-	transition-timing-function: background-image cubic-bezier(0.42,0,0.58,1);*/
-	/*transition: background 3s step-end;*/
-	/*-webkit-transition: opacity .6s ease-in-out;
-	-moz-transition: opacity .6s ease-in-out;
-	-o-transition: opacity .6s ease-in-out;
-	transition: opacity .6s ease-in-out;*/
+    background-size: 120% 120%;
+    /*border-bottom: .15em solid #00008B;*/
+    border-bottom: .15em solid rgba(0, 0, 0, 0.7);
+	/*-webkit-transition-timing-function: background cubic-bezier(0.42,0,0.58,10);
+	transition-timing-function: background cubic-bezier(0.42,0,0.58,10);*/
 
 	/*background-position: top center;
 	background-image:url(../images/coffee-shop.jpg);
@@ -217,30 +214,90 @@ td
 	padding: 6%;
 	margin: 0 auto;
 	text-align: left;
-	border-bottom: 5px solid #bfc297;
-	-moz-transition: all 3s ease-in-out;
+	border-bottom: 5px solid #bfc297;*/
+	/*-moz-transition: all 3s ease-in-out;
 	-webkit-transition: all 3s ease-in-out;
 	transition: all 3s ease-in-out;*/
 
-	 -ms-animation: animatedBackground 3s linear;
-        -moz-animation: animatedBackground 3s linear;
-        -webkit-animation: animatedBackground 3s linear;
+	-moz-transition: 3s ease-in-out;
+	-webkit-transition: 3s ease-in-out;
+	transition: 3s ease-in-out;
 }
 
-/* Put your css in here */
-@keyframes animatedBackground {
-    from { left: 0; }
-    to { left: -1269px; }
-}
-@-webkit-keyframes animatedBackground {
-    from { left: 0; }
-    to { left: -12px; }
-}
-@-moz-keyframes animatedBackground {
-    from { left: 0; }
-    to { left: -12px; }
+#section3:hover{
+ background-position: top right;
 }
 
+#section4 {
+  background: 
+    linear-gradient(
+      rgba(0,75,0, .9), 
+      rgba(0,75,0, .9)
+    ),
+    url(../images/hip-hop.jpg);
+    /*background-position: top center;*/
+    background-size: 100% 100%;
+    padding: 0 0 7% 0;
+    border-bottom: .15em solid rgba(0, 0, 0, 0.7);
+}
+
+#section4:hover{
+ 	animation-name: resize;
+	animation-duration: 0.2s;
+	animation-iteration-count: 3;
+	animation-direction: alternate;
+	/*animation-timing-function: ease-in-out;*/
+}
+
+@keyframes resize {
+  0% {
+  	/*padding: 0 0 6% 0;*/
+  	/*padding: 0;*/
+  	background-size: 100% 100%;
+    
+  }
+  50% {
+  	/*padding: 1% 0 7% 0;*/
+    /*padding: 0 20px;*/
+    /*background-color:rgba(255,0,0,0.2);*/
+    background-size: 101% 101%;
+  }
+  100% {
+    /*padding: 0 0 6% 0;*/
+    /*background-color:rgba(255,0,0,0.9);*/
+    background-size: 100% 100%;
+  }
+}
+
+#section5{
+	background-color:#556;
+background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(60deg, #222 25%, transparent 25.5%, transparent 75%, #99a 75%, #222), 
+linear-gradient(60deg, #222 25%, transparent 25.5%, transparent 75%, #99a 75%, #222);
+background-size:80px 140px;
+background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+
+/*background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);*/
+
+/*background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #8B1A1A 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;*/
+}
 
 /****************/
 
@@ -267,7 +324,8 @@ td
 
 .image { 
    position: relative; 
-   width: 100%; /* for IE 6 */
+   /* for IE 6 */
+   width: 100%; 
 }
 
 h2 { 
@@ -290,7 +348,7 @@ h2 span {
 
 .summary 
     { 
-    color: #dddddds;
+    color: #dddddd;
     padding: 0 0 3% 0;
 }
 
@@ -299,25 +357,3 @@ h2 span {
 	background: rgba(0, 0, 0, 0.7);
 	padding: 1% 1% 1% 1%;
 }
-
-
-/*header {
-  /*background-image: url("../img/background.jpg");
-
-  min-height: 1113px;
-  text-align: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}*/
-
-/*html, body, div, pre, p, img, span, ul, li, section, h1, time, hr, hgroup, a, img, aside, nav, form, input, article, h2, h3, h4, label, textarea, small {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  text-decoration: none;
-  font-family: Rosario;
-}*/
