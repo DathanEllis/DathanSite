@@ -1,41 +1,33 @@
 
-*  
-    { 
+* { 
     margin: 0; 
     padding: 0; 
     border: 0; 
 }
 /****************/
 
-.clear 
-    { 
+.clear { 
     clear: both; 
 } 
 
-.right 
-    { 
+.right { 
     float: right; 
 } 
 
-.left 
-    { 
+.left { 
     float: left; 
 }
 /****************/
 
-body 
-    { 
-   	/*font-family: "Exo 2", sans-serif;*/
+body { 
     /*font: 62.5%/1.5  "Exo 2", "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif; */
     font: 125%/1.5em  "Exo 2", "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
-    /*background: url(/images/wallpaper.png) repeat; */
     color: #aaaaaa;   
     /*text-align: center; */
     /*background: #2a2a2a;*/
 } 
 
-#wrapper 
-    {  
+#wrapper {  
     width: 980px;  
     text-align: left;   
     margin-left: auto;  
@@ -45,38 +37,32 @@ body
 /****************/
 
 
-h1 
-    { 
+h1 { 
     font-size: 2.2em;
     text-shadow: 2px 2px 0 #222222;
     text-align: center;
 } 
 
-h2 
-    { 
+h2 { 
     font-size: 2.0em;     
 } 
 
-h3 
-    { 
+h3 { 
     font-size: 1.8em;
     text-shadow: 2px 2px 0 #222222;
     text-align: center;
 }
 
-h4 
-    { 
+h4 { 
     font-size: 1.6em;     
 } 
 
-h5 
-    { 
+h5 { 
     font-size: 1.4em;     
 } 
 
-p 
-    { 
-    /*font-size: 1.2em;     */
+p { 
+    /*font-size: 1.2em;*/
     font-size: 0.9em;
     padding: 3% 0;
 }
@@ -89,40 +75,31 @@ ul {
 }
 
 ul li {
-    /*background-image: url(sqpurple.gif);*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: 0px center; */
     padding-left: 0; 
     text-align: left;
     /*font-size: 0.7em;*/
     /*line-height: 1.5em;*/
 }
 
-.p2
-    { 
-    /*font-size: 1.2em;     */
+.p2 { 
     font-size: 0.7em;
     padding: 0.5% 3% 3% 0;
     text-align: left;
 }
-
 /****************/
 
 
-input.text 
-  { 
+input.text { 
   padding: 3px; 
   border: 1px solid #999999;     
 }
 
-table 
-  {  
+table {  
   border-spacing: 0; 
   border-collapse: collapse; 
 } 
 
-td  
-  { 
+td { 
   text-align: left; 
   font-weight: normal; 
 }
@@ -131,14 +108,14 @@ td
 
 #section0 {
 	background-image: url(../images/space-2.jpg);
-	/*background-size: 100% 100%;*/
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	/*background-position: center;*/
-	border-bottom: .2em solid #8B1A1A;
+	/*border-bottom: .2em solid #8B1A1A;*/
+  border-bottom: .2em solid rgba(0, 0, 0, 0.9);
 	padding: 0 0 6% 0;
 }
 
@@ -148,16 +125,14 @@ td
 	top: 35%;
 	width: 100%;
 	-webkit-animation: text_drop 3.5s forwards ; /* Chrome, Safari, Opera */
-    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
-    animation: text_drop 3.5s forwards;
-    animation-delay: 1s;
+  -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+  animation: text_drop 3.5s forwards;
+  animation-delay: 1s;
 	animation-iteration-count: 1;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes text_drop {
-    /*from {top: 47%;}
-    to {top: 54%;}*/
     from {top: 35%;}
     to {top: 45%;}
 }
@@ -175,7 +150,6 @@ td
     ),
     url(../images/martin-luther-king.jpg);
     border-bottom: .15em solid rgba(0, 0, 0, 0.9);
-    /*background-size: 100% 100%;*/
     padding: 0 0 10% 0;
     background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -186,14 +160,11 @@ td
 }
 
 #section2 {
-	/*background-color: gray;*/
-	/*background-color: rgba(0,255,0,0.3);*/
 	background-color: rgba(0,0,139,0.3);
 	/*background-image: linear-gradient(90deg, transparent 99%, rgba(255,255,255,0.5) 50%);*/
-	background-image: linear-gradient(90deg, transparent 99%, rgba(0,70,100,0.3) 50%);
+	background-image: linear-gradient(90deg, transparent 98%, rgba(0,70,100,0.3) 50%);
 	background-size: 50px 50px;
-	/*border-bottom: .15em solid #528B8B;*/
-	border-bottom: .15em solid rgba(0, 0, 0, 0.7);
+	border-bottom: .15em solid rgba(0, 0, 0, 0.9);
 }
 
 #section3 {
@@ -204,9 +175,7 @@ td
     ),
     url(../images/coffee-shop.jpg);
     /*background-position: top center;*/
-    /*background-size: 120% 120%;*/
-    /*border-bottom: .15em solid #00008B;*/
-    border-bottom: .15em solid rgba(0, 0, 0, 0.7);
+    border-bottom: .15em solid rgba(0, 0, 0, 0.9);
 
     background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -215,36 +184,27 @@ td
 	background-size: cover;
 	background-position: center;
 
-	/*-webkit-transition-timing-function: background cubic-bezier(0.42,0,0.58,10);
-	transition-timing-function: background cubic-bezier(0.42,0,0.58,10);*/
-
-	/*background-position: top center;
-	background-image:url(../images/coffee-shop.jpg);
-	min-height: 100%;
-	height: auto;
-	padding: 6%;
-	margin: 0 auto;
-	text-align: left;
-	border-bottom: 5px solid #bfc297;*/
-	/*-moz-transition: all 3s ease-in-out;
-	-webkit-transition: all 3s ease-in-out;
-	transition: all 3s ease-in-out;*/
-
 	-moz-transition: 3s ease-in-out;
 	-webkit-transition: 3s ease-in-out;
 	transition: 3s ease-in-out;
 }
 
-#section3:hover{
+#section3:hover {
  background-position: top right;
 }
 
-#section4{
-    background: url(../images/boulder-hike.jpg);
-    border-bottom: .15em solid rgba(0,0,0,0.9);
-    /*background-size: 100% 100%;*/
-    padding: 0 0 12% 0;
-    background-repeat: no-repeat;
+#section4 {
+  background: 
+    linear-gradient(
+      rgba(48,48,48, 0.5), 
+      rgba(48,48,48, 0.5)
+    ),
+    url(../images/boulder-hike2.jpg);
+  /*background: url(../images/boulder-hike2.jpg);*/
+  border-bottom: .15em solid rgba(0,0,0,0.9);
+  /*background-size: 100% 100%;*/
+  padding: 0 0 12% 0;
+  background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -253,31 +213,17 @@ td
 }
 
 #section5 {
-  /*background: 
-    linear-gradient(
-      rgba(139,26,26, .9), 
-      rgba(0,75,0, .9)
-    ),
-    url(../images/hip-hop.jpg);*/
-
-    /*background: 
-    linear-gradient(
-      rgba(139,26,26, .9), 
-      rgba(139,26,26, .9)
-    ),
-    url(../images/hip-hop.jpg);*/
-
-    background: 
-    linear-gradient(
-      rgba(50,0,10, .9),
-      rgba(50,0,10, .9)
-    ),
-    url(../images/hip-hop.jpg);
-    /*background-position: top center;*/
-    background-size: 100% auto;
-    padding: 0 0 7% 0;
-    border-bottom: .15em solid rgba(0,0,0,1);
-    background-repeat: no-repeat;
+  background: 
+  linear-gradient(
+    rgba(50,0,10, .85),
+    rgba(50,0,10, .85)
+  ),
+  url(../images/beats.jpg);
+  /*background-position: top center;*/
+  background-size: 100% auto;
+  padding: 0 0 3% 0;
+  border-bottom: .15em solid rgba(0,0,0,1);
+  background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -285,7 +231,7 @@ td
 	background-position: center;
 }
 
-#section5:hover{
+#section5:hover {
  	/*animation-name: resize;
 	animation-duration: 0.2s;
 	animation-iteration-count: 2;
@@ -297,63 +243,43 @@ td
   0% {
   	/*padding: 0 0 6% 0;*/
   	background-size: 100% auto;
-  	/*-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;*/
     
   }
   50% {
   	/*padding: 1% 0 7% 0;*/
     background-size: 101% auto;
-    /*transform: scale(1.05);
-	-moz-transform: scale(1.05);
-	-ms-transform: scale(1.05);
-	-o-transform: scale(1.05);
-	-webkit-transform: scale(1.05);*/
   }
   100% {
     /*padding: 0 0 6% 0;*/
     background-size: 100% auto;
-    /*-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;*/
   }
 }
 
-#section6{
-/*background: radial-gradient(black 10%, transparent 14%) 0 0,
-radial-gradient(black 10%, transparent 10%) 8px 8px,
-radial-gradient(rgba(255,255,255,.1) 10%, transparent 10%) 0 1px,
-radial-gradient(rgba(255,255,255,.1) 10%, transparent 10%) 8px 10px;
-background-color:#282828;
-background-size:16px 16px;*/
-background: #020241;
-background-image: url("../images/zenbg.png");
-}
-
+#section6 {
+  background-color: #2a2a2a;
+  background-image: linear-gradient(90deg, rgba(255,255,255,.05) 50%, transparent 50%),
+  linear-gradient(90deg, rgba(255,255,255,.06) 50%, transparent 50%),
+  linear-gradient(90deg, transparent 50%, rgba(255,255,255,.03) 50%),
+  linear-gradient(90deg, transparent 50%, rgba(255,255,255,.04) 50%);
+  background-size: 13px, 29px, 37px, 53px;
 /****************/
 
 .content {
-	/*padding: 3% 3%;*/
-	/*font: 62.5%/1.5em  "Exo 2", "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;*/
 	line-height: 1.5em;
 	font-size: 0.7em;
-    padding: 0.5% 3% 3% 3%;
-    text-align: left;
+  padding: 0.5% 3% 3% 3%;
+  text-align: left;
 }
 
-.title
-    { 
-    font-size: 0.8em;
-    padding: 0.5% 3% 2% 3%;
-    text-align: left; 
+.title { 
+  font-size: 0.8em;
+  padding: 0.5% 3% 2% 3%;
+  text-align: left; 
 }
 
-.right-border {
-    /*border-right: 1px solid #aaa;*/
-}
+/*.right-border {
+  border-right: 1px solid #aaa;
+}*/
 
 .image { 
 	position: relative; 
@@ -364,26 +290,15 @@ background-image: url("../images/zenbg.png");
 }
 
 h2 { 
-   position: absolute; 
-   top: 200px; 
-   left: 0; 
-   width: 100%; 
+  position: absolute; 
+  top: 200px; 
+  left: 0; 
+  width: 100%; 
 }
 
-h2 span { 
-   /*font: bold 24px/45px Helvetica, Sans-Serif; */
-   font: bold 40%/60% Helvetica, Sans-Serif; 
-   /*letter-spacing: -1px;  */
-   background: rgb(0, 0, 0); /* fallback color */
-   /*background: rgba(0, 0, 0, 0.7);*/
-   background: rgba(0, 0, 0, 0.8);
-   padding: 1%; 
-}
-
-.summary 
-    { 
-    color: #dddddd;
-    padding: 0 0 3% 0;
+.summary { 
+  color: #DDDDDD;
+  padding: 0 0 3% 0;
 }
 
 .background-block {
@@ -403,7 +318,7 @@ h2 span {
 
 .header {
 	font-size: 0.9em;
-    padding: 3% 0 1% 0;
+  padding: 3% 0 1% 0;
 }
 
 .pad-right-top {
