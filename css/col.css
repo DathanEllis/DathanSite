@@ -30,7 +30,7 @@
 }
 .sectioncol:nth-child(odd)
 {
-    background-color: rgba(104, 107, 121, .1);
+    /*background-color: rgba(104, 107, 121, .1);*/
 }
 /* ==========================================================================
    Grouping

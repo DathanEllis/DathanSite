@@ -131,21 +131,21 @@ td
 
 #section0 {
 	background-image: url(../images/space-2.jpg);
-	/*padding: 30% 0 0 0;*/
-	background-size: 100% 100%;
-	/*-webkit-background-size: cover;
+	/*background-size: 100% 100%;*/
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	-o-background-size: cover;*/
+	-o-background-size: cover;
+	background-size: cover;
+	/*background-position: center;*/
 	border-bottom: .2em solid #8B1A1A;
-	/*min-height: 100%;*/
-	/*height: auto;*/
 	padding: 0 0 6% 0;
 }
 
 #section0 h1 {
 	font-size: 3em;
 	position: absolute;
-	top: 39%;
+	top: 35%;
 	width: 100%;
 	-webkit-animation: text_drop 3.5s forwards ; /* Chrome, Safari, Opera */
     -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
@@ -158,21 +158,16 @@ td
 @-webkit-keyframes text_drop {
     /*from {top: 47%;}
     to {top: 54%;}*/
-    from {top: 39%;}
-    to {top: 49%;}
+    from {top: 35%;}
+    to {top: 45%;}
 }
 
 @keyframes text_drop {
-    from {top: 39%;}
-    to {top: 49%;}
+    from {top: 35%;}
+    to {top: 45%;}
 }
 
 #section1 {
-	/*background-image: url(../images/martin-luther-king.jpg);
-	background-size: 100% 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;*/
   background: 
     linear-gradient(
       rgba(48,48,48, 0.65), 
@@ -180,6 +175,14 @@ td
     ),
     url(../images/martin-luther-king.jpg);
     border-bottom: .15em solid rgba(0, 0, 0, 0.9);
+    /*background-size: 100% 100%;*/
+    padding: 0 0 10% 0;
+    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/*background-position: center;*/
 }
 
 #section2 {
@@ -196,14 +199,22 @@ td
 #section3 {
   background: 
     linear-gradient(
-      rgba(139,69,19, 0.95), 
-      rgba(139,69,19, 0.95)
+      rgba(139,69,19, 0.9), 
+      rgba(139,69,19, 0.9)
     ),
     url(../images/coffee-shop.jpg);
-    background-position: top center;
-    background-size: 120% 120%;
+    /*background-position: top center;*/
+    /*background-size: 120% 120%;*/
     /*border-bottom: .15em solid #00008B;*/
     border-bottom: .15em solid rgba(0, 0, 0, 0.7);
+
+    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+
 	/*-webkit-transition-timing-function: background cubic-bezier(0.42,0,0.58,10);
 	transition-timing-function: background cubic-bezier(0.42,0,0.58,10);*/
 
@@ -228,75 +239,98 @@ td
  background-position: top right;
 }
 
-#section4 {
-  background: 
+#section4{
+    background: url(../images/boulder-hike.jpg);
+    border-bottom: .15em solid rgba(0,0,0,0.9);
+    /*background-size: 100% 100%;*/
+    padding: 0 0 12% 0;
+    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+
+#section5 {
+  /*background: 
     linear-gradient(
-      rgba(0,75,0, .9), 
+      rgba(139,26,26, .9), 
       rgba(0,75,0, .9)
+    ),
+    url(../images/hip-hop.jpg);*/
+
+    /*background: 
+    linear-gradient(
+      rgba(139,26,26, .9), 
+      rgba(139,26,26, .9)
+    ),
+    url(../images/hip-hop.jpg);*/
+
+    background: 
+    linear-gradient(
+      rgba(50,0,10, .9),
+      rgba(50,0,10, .9)
     ),
     url(../images/hip-hop.jpg);
     /*background-position: top center;*/
-    background-size: 100% 100%;
+    background-size: 100% auto;
     padding: 0 0 7% 0;
-    border-bottom: .15em solid rgba(0, 0, 0, 0.7);
+    border-bottom: .15em solid rgba(0,0,0,1);
+    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
 }
 
-#section4:hover{
- 	animation-name: resize;
+#section5:hover{
+ 	/*animation-name: resize;
 	animation-duration: 0.2s;
-	animation-iteration-count: 3;
-	animation-direction: alternate;
+	animation-iteration-count: 2;
+	animation-direction: alternate;*/
 	/*animation-timing-function: ease-in-out;*/
 }
 
 @keyframes resize {
   0% {
   	/*padding: 0 0 6% 0;*/
-  	/*padding: 0;*/
-  	background-size: 100% 100%;
+  	background-size: 100% auto;
+  	/*-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;*/
     
   }
   50% {
   	/*padding: 1% 0 7% 0;*/
-    /*padding: 0 20px;*/
-    /*background-color:rgba(255,0,0,0.2);*/
-    background-size: 101% 101%;
+    background-size: 101% auto;
+    /*transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-webkit-transform: scale(1.05);*/
   }
   100% {
     /*padding: 0 0 6% 0;*/
-    /*background-color:rgba(255,0,0,0.9);*/
-    background-size: 100% 100%;
+    background-size: 100% auto;
+    /*-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;*/
   }
 }
 
-#section5{
-	background-color:#556;
-background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
-linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
-linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
-linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
-linear-gradient(60deg, #222 25%, transparent 25.5%, transparent 75%, #99a 75%, #222), 
-linear-gradient(60deg, #222 25%, transparent 25.5%, transparent 75%, #99a 75%, #222);
-background-size:80px 140px;
-background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
-
-/*background:
-linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);*/
-
-/*background:
-linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #8B1A1A 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-background-color: #131313;
-background-size: 20px 20px;*/
+#section6{
+/*background: radial-gradient(black 10%, transparent 14%) 0 0,
+radial-gradient(black 10%, transparent 10%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 10%, transparent 10%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 10%, transparent 10%) 8px 10px;
+background-color:#282828;
+background-size:16px 16px;*/
+background: #020241;
+background-image: url("../images/zenbg.png");
 }
 
 /****************/
@@ -314,18 +348,19 @@ background-size: 20px 20px;*/
     { 
     font-size: 0.8em;
     padding: 0.5% 3% 2% 3%;
-    text-align: left;
-    
+    text-align: left; 
 }
 
 .right-border {
-    border-right: 1px solid #aaaaaa;
+    /*border-right: 1px solid #aaa;*/
 }
 
 .image { 
-   position: relative; 
-   /* for IE 6 */
-   width: 100%; 
+	position: relative; 
+	width: 60%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h2 { 
@@ -336,7 +371,6 @@ h2 {
 }
 
 h2 span { 
-   /*color: white; */
    /*font: bold 24px/45px Helvetica, Sans-Serif; */
    font: bold 40%/60% Helvetica, Sans-Serif; 
    /*letter-spacing: -1px;  */
@@ -356,4 +390,23 @@ h2 span {
 	font-size: 0.9em;
 	background: rgba(0, 0, 0, 0.7);
 	padding: 1% 1% 1% 1%;
+	border-radius: 5px;
+}
+
+.background-block-cols {
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 5px;
+	/*padding: 1% 1% 1% 1%;*/
+	/*vertical-align: middle;*/
+	/*display: table-cell;*/
+}
+
+.header {
+	font-size: 0.9em;
+    padding: 3% 0 1% 0;
+}
+
+.pad-right-top {
+	padding-right: 1%;
+	padding-top: 10%;
 }
