@@ -1,91 +1,94 @@
 
 * { 
-    margin: 0; 
-    padding: 0; 
-    border: 0; 
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
 }
 /****************/
 
 .clear { 
-    clear: both; 
+  clear: both; 
 } 
 
 .right { 
-    float: right; 
+  float: right; 
 } 
 
 .left { 
-    float: left; 
+  float: left; 
 }
 /****************/
 
 body { 
-    /*font: 62.5%/1.5  "Exo 2", "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif; */
-    font: 125%/1.5em  "Exo 2", "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
-    color: #aaaaaa;   
-    /*text-align: center; */
-    /*background: #2a2a2a;*/
+  /*font: 62.5%/1.5  "Exo 2", "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif; */
+  font: 125%/1.5em  "Exo 2", "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
+  color: #aaaaaa;   
+  /*text-align: center; */
+  /*background: #2a2a2a;*/
 } 
 
 #wrapper {  
-    width: 980px;  
-    text-align: left;   
-    margin-left: auto;  
-    margin-right: auto;  
-    background-color: #FFFFFF; 
+  width: 980px;  
+  text-align: left;   
+  margin-left: auto;  
+  margin-right: auto;  
+  background-color: #FFFFFF; 
 }
 /****************/
 
 
 h1 { 
-    font-size: 2.2em;
-    text-shadow: 2px 2px 0 #222222;
-    text-align: center;
+  font-size: 2.2em;
+  text-shadow: 2px 2px 0 #222222;
+  text-align: center;
 } 
 
 h2 { 
-    font-size: 2.0em;     
+  font-size: 2.0em;     
 } 
 
 h3 { 
-    font-size: 1.8em;
-    text-shadow: 2px 2px 0 #222222;
-    text-align: center;
+  font-size: 1.8em;
+  text-shadow: 2px 2px 0 #222222;
+  text-align: center;
 }
 
 h4 { 
-    font-size: 1.6em;     
+  font-size: 1.6em;     
 } 
 
 h5 { 
-    font-size: 1.4em;     
+  font-size: 1.4em;     
 } 
 
 p { 
-    /*font-size: 1.2em;*/
-    font-size: 0.9em;
-    padding: 3% 0;
+  font-size: 0.9em;
+  padding: 3% 0;
 }
 
 ul {
-    /*list-style-type: none;*/
-    padding: 3% 3% 3% 5%;
-    margin: 0;
-    text-align: center;
+  /*list-style-type: none;*/
+  padding: 3% 3% 3% 5%;
+  margin: 0;
+  text-align: center;
 }
 
 ul li {
-    padding-left: 0; 
-    text-align: left;
-    /*font-size: 0.7em;*/
-    /*line-height: 1.5em;*/
+  padding-left: 0; 
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
 }
 
 .p2 { 
-    font-size: 0.7em;
-    padding: 0.5% 3% 3% 0;
-    text-align: left;
+  /*font-size: 1.2em;     */
+  font-size: 0.7em;
+  padding: 0.5% 3% 3% 0;
+  text-align: left;
 }
+
 /****************/
 
 
@@ -116,7 +119,7 @@ td {
 	/*background-position: center;*/
 	/*border-bottom: .2em solid #8B1A1A;*/
   border-bottom: .2em solid rgba(0, 0, 0, 0.9);
-	padding: 0 0 6% 0;
+  padding: 0 0 6% 0;
 }
 
 #section0 h1 {
@@ -128,40 +131,51 @@ td {
   -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
   animation: text_drop 3.5s forwards;
   animation-delay: 1s;
-	animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes text_drop {
-    from {top: 35%;}
-    to {top: 45%;}
+  from {top: 35%;}
+  to {top: 45%;}
 }
 
 @keyframes text_drop {
-    from {top: 35%;}
-    to {top: 45%;}
+  from {top: 35%;}
+  to {top: 45%;}
+}
+
+.arrow {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: -14px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/arrow.png);
+  background-size: contain;
+  z-index: 1;
 }
 
 #section1 {
   background: 
-    linear-gradient(
-      rgba(48,48,48, 0.65), 
-      rgba(48,48,48, 0.65)
+  linear-gradient(
+    rgba(48,48,48, 0.65), 
+    rgba(48,48,48, 0.65)
     ),
-    url(../images/martin-luther-king.jpg);
-    border-bottom: .15em solid rgba(0, 0, 0, 0.9);
-    padding: 0 0 10% 0;
-    background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	/*background-position: center;*/
+  url(../images/martin-luther-king.jpg);
+  border-bottom: .15em solid rgba(0, 0, 0, 0.9);
+  padding: 0 0 10% 0;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*background-position: center;*/
 }
 
 #section2 {
 	background-color: rgba(0,0,139,0.3);
-	/*background-image: linear-gradient(90deg, transparent 99%, rgba(255,255,255,0.5) 50%);*/
 	background-image: linear-gradient(90deg, transparent 98%, rgba(0,70,100,0.3) 50%);
 	background-size: 50px 50px;
 	border-bottom: .15em solid rgba(0, 0, 0, 0.9);
@@ -169,24 +183,23 @@ td {
 
 #section3 {
   background: 
-    linear-gradient(
-      rgba(139,69,19, 0.9), 
-      rgba(139,69,19, 0.9)
+  linear-gradient(
+    rgba(139,69,19, 0.9), 
+    rgba(139,69,19, 0.9)
     ),
-    url(../images/coffee-shop.jpg);
-    /*background-position: top center;*/
-    border-bottom: .15em solid rgba(0, 0, 0, 0.9);
+  url(../images/coffee-shop.jpg);
+  /*background-position: top center;*/
+  border-bottom: .15em solid rgba(0, 0, 0, 0.9);
 
-    background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-position: center;
-
-	-moz-transition: 3s ease-in-out;
-	-webkit-transition: 3s ease-in-out;
-	transition: 3s ease-in-out;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  -moz-transition: 3s ease-in-out;
+  -webkit-transition: 3s ease-in-out;
+  transition: 3s ease-in-out;
 }
 
 #section3:hover {
@@ -195,59 +208,63 @@ td {
 
 #section4 {
   background: 
-    linear-gradient(
-      rgba(48,48,48, 0.5), 
-      rgba(48,48,48, 0.5)
+  linear-gradient(
+    rgba(48,48,48, 0.4), 
+    rgba(48,48,48, 0.4)
     ),
-    url(../images/boulder-hike2.jpg);
+  url(../images/boulder-hike.jpg);
   /*background: url(../images/boulder-hike2.jpg);*/
   border-bottom: .15em solid rgba(0,0,0,0.9);
   /*background-size: 100% 100%;*/
   padding: 0 0 12% 0;
   background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
 }
 
 #section5 {
   background: 
   linear-gradient(
-    rgba(50,0,10, .85),
-    rgba(50,0,10, .85)
-  ),
+    rgba(50,0,10, .84),
+    rgba(50,0,10, .84)
+    ),
   url(../images/beats.jpg);
   /*background-position: top center;*/
   background-size: 100% auto;
   padding: 0 0 3% 0;
   border-bottom: .15em solid rgba(0,0,0,1);
   background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
 }
 
-#section5:hover {
+/*#section5:hover {*/
  	/*animation-name: resize;
 	animation-duration: 0.2s;
 	animation-iteration-count: 2;
 	animation-direction: alternate;*/
 	/*animation-timing-function: ease-in-out;*/
-}
+  /*}*/
 
-@keyframes resize {
-  0% {
-  	/*padding: 0 0 6% 0;*/
-  	background-size: 100% auto;
-    
-  }
-  50% {
-  	/*padding: 1% 0 7% 0;*/
-    background-size: 101% auto;
+  @keyframes resize {
+    0% {
+     /*padding: 0 0 6% 0;*/
+     background-size: 100% auto;    
+   }
+   50% {
+     /*padding: 1% 0 7% 0;*/
+     background-size: 101% auto;
+    /*transform: scale(1.05);
+  	-moz-transform: scale(1.05);
+  	-ms-transform: scale(1.05);
+  	-o-transform: scale(1.05);
+  	-webkit-transform: scale(1.05);*/
   }
   100% {
     /*padding: 0 0 6% 0;*/
@@ -262,6 +279,7 @@ td {
   linear-gradient(90deg, transparent 50%, rgba(255,255,255,.03) 50%),
   linear-gradient(90deg, transparent 50%, rgba(255,255,255,.04) 50%);
   background-size: 13px, 29px, 37px, 53px;
+}
 /****************/
 
 .content {
@@ -276,10 +294,6 @@ td {
   padding: 0.5% 3% 2% 3%;
   text-align: left; 
 }
-
-/*.right-border {
-  border-right: 1px solid #aaa;
-}*/
 
 .image { 
 	position: relative; 
@@ -305,15 +319,16 @@ h2 {
 	font-size: 0.9em;
 	background: rgba(0, 0, 0, 0.7);
 	padding: 1% 1% 1% 1%;
-	border-radius: 5px;
+	-webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
 
 .background-block-cols {
 	background: rgba(0, 0, 0, 0.7);
-	border-radius: 5px;
-	/*padding: 1% 1% 1% 1%;*/
-	/*vertical-align: middle;*/
-	/*display: table-cell;*/
+	-webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
 
 .header {
@@ -324,4 +339,100 @@ h2 {
 .pad-right-top {
 	padding-right: 1%;
 	padding-top: 10%;
+}
+/******************/
+
+#menu {
+  height: 20px;
+  color: #f2f2f2;
+  position: fixed;
+  z-index: 5;
+  /*bottom: 0;*/
+  top: 0;
+  width: 100%;
+  text-align: right;
+  font-size: 0.9em;
+  padding: 8px 0 8px 0;
+}
+
+#menu ul {
+  padding: 0 40px;
+  text-align: right;
+}
+
+#menu li a {
+  display: block;
+  margin: 0 22px 0 0;
+  /*color: #333;*/
+  color: #aaaaaa;
+}
+
+#menu li a:hover {
+  text-decoration: underline;
+}
+
+#menu li {
+  display: inline-block;
+  position: relative;
+}
+
+
+#menuList {
+  display: none;
+  background: #282828;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  /*padding: 20px;*/
+  padding: 30%;
+  float: left;
+  position: absolute;
+  /*bottom: 29px;*/
+  right: 0;
+  width: 100px;
+  text-align: left;
+}
+
+#menuList ul {
+  padding: 0;
+}
+
+#menuList ul li {
+  display: block;
+  margin: 5px 0;
+}
+
+#menuList ul li a {
+  color: #BDBDBD;
+  margin: 0;
+}
+
+#menuList ul li a:hover {
+  color: #f2f2f2;
+}
+
+#menuList .column {
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+#menuList h3 {
+  color: #f2f2f2;
+  font-size: 1.2em;
+  margin: 0 0 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255, 0.1);
+  -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+  padding: 0 0 5px 0;
+}
+/***************/
+
+/**
+* media queries
+*/
+@media only screen and (max-width: 899px) {
+  .arrow {
+    bottom: 87%;
+  }
 }

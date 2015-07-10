@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
 <head> 
     <title>Dathan Ellis</title> 
-    <meta name="DC.title" content="Dathan Ellis Experience" /> 
-    <meta name="DC.subject" content="dathan,ellis,resume,experience,skills,developer,engineer" /> 
-    <meta name="DC.description" content="Dathans professional page" /> 
+    <meta name="DC.title" content="Dathan Ellis Professional" /> 
+    <meta name="DC.subject" content="dathan,ellis,resume,experience,skills,developer,engineer,software" /> 
+    <meta name="DC.description" content="Dathan Ellis professional page" /> 
     <meta name="DC.format" content="text/html" /> 
-    <meta name="DC.publisher" content="Dathan" /> 
+    <meta name="DC.publisher" content="Dathan Ellis" /> 
     <meta name="DC.language" content="en" /> 
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" /> 
 
@@ -24,11 +24,31 @@
 </head> 
 
 <body>
+	<div id="menu">
+		<ul>
+			<li>
+				<a href="#" id="showMenu">Menu</a>
+				<div id="menuList">
+					<div class="column">
+						<!-- <h3>Menu</h3> -->
+						<ul>
+							<li><a href="https://www.linkedin.com/in/dathanellis" target="_blank">LinkedIn</a></li>
+							<li><a href="https://github.com/DathanEllis" target="_blank">GitHub</a></li>
+							<li><a href="files/DathanEllisResume.pdf" download="DathanEllis-Resume.pdf">Resume</a></li>
+							<li><a href="mailto:dathanellis@gmail.com?subject=dathanellis.me" target="_blank">Email</a>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
 	<div id="fullpage">
 
 		<div id="section0" class="section">
-				<h1>DATHAN ELLIS</h1>
-			
+			<h1>DATHAN ELLIS</h1>
+			<div class="arrow"></div>
+
 		</div>
 		<div id="section1" class="section">
 				<div class="sectioncol group">
@@ -37,7 +57,7 @@
 				    </div>
 
 					    <div class="background-block">
-							Software engineer with 14+ years of IT experience including design, development, testing, business analysis, and team management. I am an accomplished full stack developer with strong skills in .NET, JavaScript and SQL, while focusing on performance and efficiency. In my tenure, I have built web and mobile applications on several platforms for industries such as government, aerospace, telecom, co-packing, retail, organic foods, and nonprofits.
+							I'm a software engineer with 14+ years of IT experience including design, development, testing, business analysis, and team management. I am an accomplished full stack developer with strong skills in .NET, JavaScript and SQL, while focusing on performance and efficiency. In my tenure, I have built web and mobile applications on several platforms for industries such as government, aerospace, telecom, co-packing, retail, organic foods, and nonprofits.
 						</div>
 				</div>
 
@@ -251,6 +271,8 @@
 	<script type="text/javascript" src="jquery.fullPage.min.js"></script>
 
 	<script type="text/javascript">
+
+		//setting colors for each page
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				anchors: ['home', 'summary', 'experience', 'experience-2', 'experience-skills', 'personality', 'resume'],
@@ -262,6 +284,17 @@
 				responsiveWidth: 900
 			});
 		});
+
+		//hide menu when clicking somewhere else
+		$(document).on('click', function(e) {
+	        if (e.target.id == 'showMenu') {
+	            $('#menuList').css('display', 'block');
+	        } else {
+	            $('#menuList').hide();
+	        }
+
+	    });
+
 	</script>
 
 </body>
