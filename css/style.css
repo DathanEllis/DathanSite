@@ -278,7 +278,7 @@ td {
 
 .content {
     line-height: 1.5em;
-    font-size: 0.8em;
+    font-size: .9em;
     padding: 0.5% 3% 3% 3%;
     text-align: left;
 }
@@ -314,7 +314,7 @@ h2 {
 }
 
 .background-block {
-    font-size: 0.9em;
+    font-size: 1em;
     background: rgba(0, 0, 0, 0.7);
     padding: 1% 1% 1% 1%;
     -webkit-border-radius: 6px;
@@ -361,6 +361,11 @@ h2 {
     padding-top: 10%;
     width: 100% !important;
 }
+
+.underline {
+    text-decoration: underline;
+}
+
 /******************/
 
 #menu {
